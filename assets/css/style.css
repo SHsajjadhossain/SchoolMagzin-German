@@ -1,0 +1,560 @@
+/* ==================================
+        common css start
+===================================== */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+.active{
+    color: #900683 !important;
+}
+
+.banner-title{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #900683;
+    line-height: 44px;
+    text-align: center;
+}
+
+.sub-title{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 32px;
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    background: #900683;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    transition: .4s;
+}
+
+.btn:hover{
+    background: #D578CC53;
+    border-color: #900683;
+}
+
+/* ==================================
+        common css end
+===================================== */
+
+
+/* ==================================
+        nav css start
+===================================== */
+
+nav{
+    background: #FAFAFA;
+    padding: 25px 0 !important;
+}
+
+nav ul li .dropdown-menu{
+    width: 510px;
+    border: 0;
+    border-top: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);;
+    border-radius: 0;
+    margin-top: 17px !important;
+    --bs-dropdown-padding-y: 0;
+    --bs-dropdown-divider-margin-y: 0;
+}
+
+nav ul li a{
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+    line-height: 38px !important;
+    margin-right: 40px;
+    padding: 0 !important;
+    transition: .4s;
+    position: relative;
+}
+
+nav ul li .dropdown-menu a{
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+    line-height: 32px !important;
+    margin-left: 27px ;
+}
+
+nav ul li .dropdown-menu .drop-item-hover{
+    padding: 9px 0;
+    transition: .4s;
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #900683;
+    transition: .4s;
+}
+
+nav ul li .dropdown-menu a::after{
+    width: 0 !important;
+    background: none !important;
+}
+
+nav ul li .dropdown-toggle::after{
+    margin-left: 0;
+    vertical-align: 0;
+    content: "";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+nav ul li a:hover{
+    color: #900683 !important;
+}
+
+nav ul li a:hover::after{
+    width: 100% ;
+}
+
+nav ul li .dropdown-menu a:hover{
+    background-color: transparent;
+}
+
+nav ul li .dropdown-menu .drop-item-hover:hover{
+    background: #90068329;
+}
+
+nav ul li .dropdown-menu .drop-item-hover:hover a{
+    color: #000000 !important;
+}
+
+/* ==================================
+        nav css end
+===================================== */
+
+/***  
+######
+    First Page Css Start
+######
+***/
+
+/* ==================================
+        banner css start
+===================================== */
+
+#banner-part .banner-img{
+    background: no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .banner-img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(144, 6, 131, 0.5);
+    padding-top: 270px;
+    padding-bottom: 289px;
+}
+
+#banner-part .banner-img .overlay .banner-text{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 56px;
+    text-align: center;
+}
+
+/* ==================================
+        banner css end
+===================================== */
+
+/* ==================================
+        description css start
+===================================== */
+
+#description-part{
+    background: #FAFAFA;
+    margin: 82px 0;
+}
+
+#description-part p{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 32px;
+    padding: 0 167px;
+}
+
+/* ==================================
+        description css end
+===================================== */
+
+
+/* ==================================
+        school css start
+===================================== */
+
+#school-part{
+    background: #D578CC53;
+    padding-top: 59px;
+    padding-bottom: 83px;
+}
+
+#school-part h4{
+    padding: 0 381px;
+    margin-top: 25px;
+}
+
+#school-part .button{
+    margin-top: 49px;
+    margin-bottom: 37px;
+}
+
+/* ==================================
+        school css end
+===================================== */
+
+/* ==================================
+        current css start
+===================================== */
+
+#current-part{
+    background: #FAFAFA;
+    margin-top: 57px;
+    padding-bottom: 40px;
+}
+
+#current-part .text{
+    margin-top: 80px;
+    padding: 0 114px;
+}
+
+#current-part .img{
+    margin-top: 25px;
+}
+
+#current-part .text .sub-title{
+    font-weight: 700;
+    color: #900683;
+}
+
+#current-part .text p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000000;
+    margin-top: 54px;
+}
+
+#current-part .text .button{
+    margin-top: 33px;
+}
+
+#current-part .img img{
+    width: 100%;
+}
+
+/* ==================================
+        current css end
+===================================== */
+
+
+/* ==================================
+        footer css start
+===================================== */
+
+#footer-part{
+    background: #FAFAFA;
+    padding-top: 103px;
+    padding-bottom: 50px;
+}
+
+#footer-part .footer-nav .footer-nav-item{
+    margin-right: 28px;
+}
+
+#footer-part .footer-nav .footer-nav-item .footer-nav-link{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000000;
+    transition: .4s;
+}
+
+#footer-part .copyright-text p{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13px;
+    color: #900683;
+    margin-top: 40px;
+    margin-left: 32px;
+}
+
+#footer-part .footer-nav .footer-nav-item .footer-nav-link:hover{
+    color: #900683;
+}
+
+/* ==================================
+        footer css end
+===================================== */
+
+
+/***  
+######
+    First Page Css End
+######
+***/
+
+/* ======================================
+========================================= */
+
+/***  
+######
+    Second Page Css Start
+######
+***/
+
+/* =================================================
+        second-page-banner css start
+==================================================== */
+
+#banner-part .second-banner-overlay{
+    padding: 300px 0 !important;
+}
+
+/* =================================================
+        second-page-banner css end
+==================================================== */
+
+
+/* =================================================
+        second-page-trip css start
+==================================================== */
+
+#trip-part .sub-title{
+    font-weight: 700;
+    color: #900683 ;
+}
+
+#trip-part .img{
+    margin-top: 30px;
+}
+
+#trip-part .img img{
+    width: 100%;
+}
+
+#trip-part .text{
+    margin-top: 120px;
+    padding: 0 90px;
+}
+
+#trip-part .text p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 25px;
+    margin-top: 34px;
+}
+
+/* =================================================
+        second-page-trip css end
+==================================================== */
+
+/* =================================================
+        second-page-book css start
+==================================================== */
+
+#book-part{
+    background: #D578CC53;
+}
+
+#book-part .sub-title{
+    font-weight: 700;
+    color: #900683 ;
+}
+
+#book-part .img{
+    margin-top: 40px;
+}
+
+#book-part .img img{
+    width: 100%;
+}
+
+#book-part .text{
+    margin-top: 145px;
+    padding: 0 90px;
+}
+
+#book-part .text p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 25px;
+    margin-top: 34px;
+}
+
+/* =================================================
+        second-page-book css end
+==================================================== */
+
+/***  
+######
+    Second Page Css End
+######
+***/
+
+/* ======================================
+========================================= */
+
+/***  
+######
+    Third Page Css Start
+######
+***/
+
+/* =================================================
+        third-page-banner css start
+==================================================== */
+
+#banner-part .third-banner-overlay{
+    padding: 310px 0 !important;
+}
+
+/* =================================================
+        third-page-banner css end
+==================================================== */
+
+/* =================================================
+        third-page-contact-form css start
+==================================================== */
+
+#contact-form-part{
+    margin-bottom: 35px;
+}
+
+#contact-form-part .contact-form-wrapper{
+    background: #FAFAFA;
+    margin-top: 144px;
+    margin-bottom: 138px;
+    padding-top: 70px;
+    padding-bottom: 42px;
+    padding-left: 92px;
+    padding-right: 45px;
+    box-shadow: 0px 14px 40px #90068329;
+}
+
+#contact-form-part .text h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #900683;
+    line-height: 50px;
+}
+
+#contact-form-part .text h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+#contact-form-part .text h3 span{
+    display: block;
+}
+
+#contact-form-part .contact-form-wrapper form input{
+    background: #9006832C;
+    padding: 12px 0;
+    padding-left: 13px;
+    border-radius: 10px;
+}
+
+#contact-form-part .contact-form-wrapper form input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    color: #0000004B;
+    line-height: 25px;
+}
+
+#contact-form-part .contact-form-wrapper form textarea{
+    height: 150px;
+    background: #9006832C;
+    resize: none;
+    border-radius: 10px;
+}
+
+#contact-form-part .contact-form-wrapper form textarea::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    color: #0000004B;
+    line-height: 25px;
+}
+
+#contact-form-part .contact-form-wrapper form .btn{
+    padding: 12px 14px;
+}
+
+/* =================================================
+        third-page-contact-form css end
+==================================================== */
+
+/***  
+######
+    Third Page Css End
+######
+***/
