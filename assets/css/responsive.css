@@ -2,21 +2,83 @@
 
     /* common css start */
 
-    nav{
-        padding: 12px 0 !important;
+    .header-menu{
+        display: none;
     }
 
-    nav img{
+    .mobile-header{
+        display: block !important;
+    } 
+
+    .mobile-header nav{
+        padding: 0 !important;
+    }
+
+    .mobile-header nav .nav-wrapper{
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    .mobile-header nav img{
         width: 41px;
     }
 
-    nav .navbar-toggler{
-        border: 0;
+    .mobile-header nav button{
+        border: none !important;
+        box-shadow: none !important;
+        transition: .4s !important;
     }
 
-    nav .navbar-toggler-icon{
-        width: 17px;
-        color: #000000;
+    .mobile-header nav button i{
+        outline: 0;
+        border: none;
+    }
+
+    .mobile-header .navbar-nav{
+        background: #FAFAFA;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul li{
+        border-top: 1.5px solid #dee2e6 !important;
+        padding: 7px 0;
+        transition: .4s;
+    }
+
+    nav ul li:first-child{
+        border-top: none !important;
+    }
+
+    nav ul li .close-icon{
+        font-size: 30px !important;
+        color: #900683 !important;
+        margin-right: 39px;
+        cursor: pointer;
+    }
+
+    nav ul li a{
+        font-size: 15px !important;
+        line-height: 19px !important;
+        margin-left: 35px !important;
+    }
+
+    nav ul li:hover{
+        background: #90068329;
+    }
+
+    nav ul li:hover a{
+        color: #000000 !important;
+    }
+
+    nav ul li a:hover::after{
+        width: 0;
+    }
+
+    .mobile-header nav button:hover{
+        color: #900683 ;
     }
 
     .title{
@@ -100,6 +162,61 @@
     }
 
     /* school css end */
+
+    /* current css start */
+
+    #current-part{
+        margin-top: 24px;
+        padding-bottom: 0;
+    }
+
+    #current-part .current-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    #current-part .img{
+        margin-top: -10px;
+    }
+
+    #current-part .text{
+        padding: 0;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    #current-part .text p{
+        font-size: 7px;
+        line-height: 10px;
+        text-align: left;
+        margin-top: 10px;
+        padding: 0 35px;
+    }
+
+    #current-part .text .button{
+        margin-top: 12px;
+    }
+
+    /* current css end */
+
+    /* footer css start */
+
+    #footer-part{
+        padding-top: 56px;
+        padding-bottom: 20px;
+    }
+
+    #footer-part .footer-nav .footer-nav-item .footer-nav-link{
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    #footer-part .copyright-text p{
+        font-size: 5px;
+        line-height: 6px;
+        margin-top: 15px;
+    }
+
+    /* footer css end */
 
 
     /* 
