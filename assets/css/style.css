@@ -13,6 +13,7 @@ html, body{
     width: 100vw;
     min-height: 100vh;
     font-family: "Source Sans 3", sans-serif;
+    background: #FAFAFA;
 }
 
 ul,ol{
@@ -225,7 +226,7 @@ nav ul li .dropdown-menu .drop-item-hover:hover a{
 
 #description-part{
     background: #FAFAFA;
-    margin: 82px 0;
+    padding: 82px 0;
 }
 
 #description-part p{
@@ -256,10 +257,15 @@ nav ul li .dropdown-menu .drop-item-hover:hover a{
     margin-top: 25px;
 }
 
+
 #school-part .button{
     margin-top: 49px;
     margin-bottom: 37px;
 }
+
+#school-part .school-banner img{
+    width: 100%;
+} 
 
 /* ==================================
         school css end
